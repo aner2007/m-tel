@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a857ecddb9a73012ddbd1747f6106e8",
+    "content-hash": "ada4ddbdcc123ee0f474903fff87cc33",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -679,6 +679,62 @@
             "time": "2022-02-21T09:13:59+00:00"
         },
         {
+            "name": "gridelementsteam/gridelements",
+            "version": "10.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CodersCare/gridelements.git",
+                "reference": "4e05b529cc07bbb81447fb6b6b0d6a840a060de3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CodersCare/gridelements/zipball/4e05b529cc07bbb81447fb6b6b0d6a840a060de3",
+                "reference": "4e05b529cc07bbb81447fb6b6b0d6a840a060de3",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-backend": "^10",
+                "typo3/cms-core": "^10",
+                "typo3/cms-frontend": "^10",
+                "typo3/cms-recordlist": "^10"
+            },
+            "replace": {
+                "typo3-ter/gridelements": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.1.0",
+                "friendsoftypo3/phpstan-typo3": "^0.8.1",
+                "phpstan/phpstan": "^0.12.99"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "gridelements"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GridElementsTeam\\Gridelements\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "This extension integrates the grid layout concept also to regular content elements - the grid elements. It offers a lot of new features like advanced drag & drop or real references, that improve the usability of the page and list module to speed up the daily work with the backend.",
+            "homepage": "https://forge.typo3.org/projects/extension-gridelements2",
+            "keywords": [
+                "Gridelements",
+                "TYPO3 CMS",
+                "grids"
+            ],
+            "support": {
+                "issues": "https://forge.typo3.org/projects/extension-gridelements2/issues",
+                "source": "https://github.com/CodersCare/gridelements/tree/10.4.3"
+            },
+            "time": "2022-04-27T12:16:37+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.8",
             "source": {
@@ -1213,6 +1269,31 @@
                 "source": "https://github.com/lolli42/FineDiff/tree/1.0.2"
             },
             "time": "2022-05-23T07:44:28+00:00"
+        },
+        {
+            "name": "m-tel/tool-provider",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/tool_provider",
+                "reference": "98e7f1fc7c933d8e35405c83e973c6360822011f"
+            },
+            "require": {
+                "typo3/cms-core": "^10.0",
+                "typo3/cms-fluid-styled-content": "^10.0",
+                "typo3/cms-rte-ckeditor": "^10.0"
+            },
+            "type": "typo3-cms-extension",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Provider extension for M-Tel",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "masterminds/html5",

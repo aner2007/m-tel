@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header .click-me {
-  background-color: #f6a000;
+  background: #f6a000;
   color: #fff;
   border-radius: 22px;
   padding: 2px 23px;
@@ -16,6 +16,81 @@ section.light {
   background: #d5f0ff;
 }
 
+/*style for button price with discount and without discount*/
+.slider-btn {
+  background: #0071a7;
+  display: flex;
+  margin: 0;
+  width: 159px;
+  border-radius: 41px;
+  padding: 0px 20px;
+  position: relative;
+  margin-top: 40px;
+  padding-top: 5px;
+}
+.slider-btn .price-div {
+  display: inline-block;
+  padding-top: 14px;
+}
+.slider-btn .price-div p {
+  margin: 0;
+  line-height: 1;
+}
+.slider-btn .price-div .price-decimal {
+  font-size: 24px;
+  font-weight: 500;
+}
+.slider-btn .price-div .price-comma {
+  margin-top: -19px;
+  margin-left: -2px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.slider-btn .price-div .price-text {
+  font-size: 12px;
+}
+.slider-btn .price-before-discount {
+  padding-top: 18px;
+  font-size: 13px;
+}
+.slider-btn .price-before-discount .old-price-text {
+  margin: 0;
+}
+.slider-btn .price-before-discount .old-price-number {
+  position: relative;
+}
+.slider-btn .price-before-discount .old-price-number::after {
+  content: "";
+  position: absolute;
+  bottom: -0.1em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  transform: rotate(-20deg);
+  transform-origin: left top;
+}
+.slider-btn .price {
+  font-size: 48px;
+  font-weight: 500;
+  margin-left: 6px;
+  margin-right: 3px;
+}
+.slider-btn .orange-title {
+  position: absolute;
+  left: auto;
+  top: 0;
+  background: #f6a000;
+  padding: 2px 4px;
+  font-size: 11px;
+  top: -8px;
+  margin: auto;
+  display: block;
+  width: 122px;
+  text-align: center;
+}
+
+/*end*/
 .section1 {
   background-size: contain;
   background-repeat: no-repeat;
@@ -37,36 +112,22 @@ section.light {
   width: 660px;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .section1 .slider-left .content {
+    float: left;
+    width: auto;
+  }
+}
 .section1 .slider-left .content h1 {
   width: 480px;
   font-size: 48px;
   position: inherit;
 }
-.section1 .slider-left .slider-btn {
-  background: #0b4daf;
-  display: block;
-  margin: 0;
-  width: 160px;
-  border-radius: 41px;
-  padding: 15px;
-  position: relative;
-  margin-top: 40px;
-}
-.section1 .slider-left .slider-btn .price-div {
-  display: inline-block;
-}
-.section1 .slider-left .slider-btn .orange-title {
-  position: absolute;
-  left: auto;
-  top: 0;
-  background: #f6a000;
-  padding: 2px 9px;
-  font-size: 11px;
-  top: -12px;
-  margin: auto;
-  display: block;
-  width: 130px;
-  text-align: center;
+@media only screen and (max-width: 768px) {
+  .section1 .slider-left .content h1 {
+    width: auto;
+    font-size: 28px;
+  }
 }
 .section1 .slider-right {
   width: 100%;
@@ -85,6 +146,11 @@ section.light {
   top: 0;
   right: -185px;
   height: 400px;
+}
+@media only screen and (max-width: 768px) {
+  .section1 .mn-hero__wave {
+    display: none;
+  }
 }
 .section1 .col-md-6 {
   padding: 0;
@@ -118,7 +184,6 @@ section.light {
 }
 
 .section3 {
-  background-color: #d5f0ff;
   max-width: 100%;
   height: 760px;
   padding-top: 60px;
@@ -127,7 +192,7 @@ section.light {
   max-width: 1320px;
   margin: auto;
 }
-.section3 .row .umbrela-block {
+.section3 .row .col-md-4 {
   background: #feffff;
   padding: 0px;
   margin-right: 17px;
@@ -135,11 +200,24 @@ section.light {
   margin-top: 10px;
   padding-bottom: 20px;
 }
-.section3 .row .umbrela-block h5 {
+@media only screen and (max-width: 1315px) {
+  .section3 .row .col-md-4 {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section3 .row .col-md-4 {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 24px;
+  }
+}
+.section3 .row .col-md-4 h5 {
   text-align: left;
   margin: 0 20px;
 }
-.section3 .row .umbrela-block p {
+.section3 .row .col-md-4 p {
   text-align: left;
   margin: 0 20px;
   margin-bottom: 130px;
@@ -147,6 +225,11 @@ section.light {
 .section3 .row .icon-box {
   background: #f1f1f1;
   padding: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .section3 .row .icon-box {
+    padding: 40px;
+  }
 }
 .section3 .row .btn-primary {
   color: #0a58ca;
@@ -207,6 +290,23 @@ section.light {
 .section4 .card {
   border: none;
 }
+.section4 .images-with-price {
+  position: relative;
+}
+.section4 .slider-btn {
+  width: 142px;
+  border-radius: 41px;
+  padding: 0px 20px;
+  position: relative;
+  padding-top: 5px;
+  float: right;
+  margin-right: 40px;
+  margin-top: -58px;
+  color: #fff;
+}
+.section4 .slider-btn .orange-title {
+  width: 105px;
+}
 
 .section5 .row {
   height: 360px;
@@ -232,6 +332,7 @@ section.light {
 .section5 .row .left-section {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  position: relative;
 }
 .section5 .row .btn-primary {
   border-radius: 25px;
@@ -243,6 +344,22 @@ section.light {
 .section5 .row h3 {
   margin-bottom: 40px;
 }
+.section5 .row .position1 {
+  position: relative;
+}
+.section5 .row .position2 {
+  position: absolute;
+  right: 40px;
+}
+.section5 .row .position3 {
+  position: absolute;
+  bottom: 40px;
+}
+.section5 .row .position4 {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
 .section5 .fa-certificate:before {
   content: "\f0a3";
   color: #2061c1;
@@ -252,8 +369,35 @@ section.light {
   margin-left: -24px;
   margin-right: 10px;
 }
+.section5 .slider-btn {
+  color: #fff;
+  width: 167px;
+}
+.section5 .slider-btn .orange-title {
+  background-color: #fff;
+  color: #084298;
+}
+.section5 .slider-btn .old-price-number::after {
+  display: none;
+  position: absolute;
+  bottom: -0.1em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  transform: rotate(-20deg);
+  transform-origin: left top;
+}
+.section5 .slider-btn .price-before-discount {
+  padding-top: 17px;
+  font-size: 12px;
+  line-height: 1.1;
+}
 
-H2, H3, H4, H5 {
+H2,
+H3,
+H4,
+H5 {
   font-weight: 600;
 }
 

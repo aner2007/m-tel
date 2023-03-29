@@ -13,7 +13,9 @@
 		"sort-packages": true
 	},
 	"require": {
+		"gridelementsteam/gridelements": "^10.4",
 		"helhum/typo3-console": "^6.0.0",
+		"m-tel/tool-provider": "^1.0.0",
 		"typo3/cms-about": "^10.4.0",
 		"typo3/cms-backend": "^10.4.0",
 		"typo3/cms-belog": "^10.4.0",

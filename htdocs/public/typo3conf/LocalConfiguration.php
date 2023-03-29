@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$RHVsUXIzLlh2akZjdVZSSA$8HjairMK7QFD641AbmWX8UwqC8NdbFuICy5/NwTtjDw',
         'loginSecurityLevel' => 'normal',
@@ -40,12 +40,22 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'gridelements' => [
+            'additionalStylesheet' => '',
+            'disableAutomaticUnusedColumnCorrection' => '0',
+            'disableCopyFromPageButton' => '0',
+            'disableDragInWizard' => '0',
+            'fluidBasedPageModule' => '0',
+            'nestingInListModule' => '0',
+            'overlayShortcutTranslation' => '0',
+        ],
     ],
     'FE' => [
+        'addRootLineFields' => 'logo,phone,email,twitter_link,facebook_link,instagram_link,youtube_link,linkedin_link',
         'cacheHash' => [
             'enforceValidation' => true,
         ],
-        'debug' => false,
+        'debug' => true,
         'disableNoCacheParameter' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -68,7 +78,7 @@ return [
                     'writerConfiguration' => [
                         'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => true,
+                                'disabled' => false,
                             ],
                         ],
                     ],
@@ -116,10 +126,10 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => '74fe297aa93ac9fa5a0af5a6bba64fd287168776f0bca1677758b878727c331687fde5e822b749ccbdf458cd476e3bfa',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'features' => [
             'felogin.extbase' => true,
             'fluidBasedPageModule' => true,
