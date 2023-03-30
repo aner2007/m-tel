@@ -1,0 +1,11 @@
+#
+# PageTS for Tool Provider
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tool_provider/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tool_provider/Configuration/TsConfig/Page/WebLayout/BackendLayouts.tsconfig">
+
+mod.SHARED {
+    defaultLanguageLabel = German
+    defaultLanguageFlag = de
+}
+

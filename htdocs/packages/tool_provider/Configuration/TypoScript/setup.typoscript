@@ -1,0 +1,7 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:./lib/PageContentColumns.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./lib/Menu.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./lib/Libraries.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./lib/Page.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./lib/Config.typoscript">

@@ -1,0 +1,9 @@
+lib.content = CONTENT
+lib.content {
+    table = tt_content
+    select {
+        where = colPos = 0
+        languageField = sys_language_uid
+        orderBy = sorting
+    }
+}

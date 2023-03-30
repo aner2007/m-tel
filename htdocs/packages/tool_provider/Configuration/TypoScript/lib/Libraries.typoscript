@@ -1,0 +1,93 @@
+lib.logo = COA
+lib.logo {
+    10 = IMAGE
+    10 {
+        if.isTrue.data = levelfield:0, logo
+        file {
+            import.data = levelfield:0, logo, slide
+            treatIdAsReference = 1
+            import.listNum = 0
+            width = 100c
+        }
+        stdWrap.typolink.parameter.data = leveluid:0
+        stdWrap.typolink.ATagParams = class="navbar-brand"
+    }
+
+    20 = TEXT
+    20 {
+        data = leveltitle:0
+        if.isFalse.data = levelfield:0, logo
+        stdWrap.typolink.parameter.data = leveluid:0
+    }
+}
+
+lib.cta = TEXT
+lib.cta {
+    wrap = <button class="btn click-me"> | </button>
+    value = Click me
+}
+
+lib.footer.social = COA
+lib.footer.social {
+    wrap = <ul class="list-inline">|</ul>
+
+    10 = TEXT
+    10 {
+        wrap = <li> | </li>
+        if.isTrue.data = levelfield:0, twitter_link
+        value = <i class="fab fa-twitter"></i>
+        stdWrap.typolink {
+            parameter.data = levelfield:0, twitter_link
+            extTarget = _blank
+        }
+    }
+    20 = TEXT
+    20 {
+        wrap = <li> | </li>
+        if.isTrue.data = levelfield:0, facebook_link
+        value = <i class="fab fa-facebook-f"></i>
+        stdWrap.typolink {
+            parameter.data = levelfield:0, facebook_link
+            extTarget = _blank
+        }
+    }
+    30 = TEXT
+    30 {
+        wrap = <li> | </li>
+        if.isTrue.data = levelfield:0, instagram_link
+        value = <i class="fab fa-instagram"></i>
+        stdWrap.typolink {
+            parameter.data = levelfield:0, instagram_link
+            extTarget = _blank
+        }
+    }
+    40 = TEXT
+    40 {
+        wrap = <li> | </li>
+        if.isTrue.data = levelfield:0, linkedin_link
+        value = <i class="fab fa-linkedin"></i>
+        stdWrap.typolink {
+            parameter.data = levelfield:0, linkedin_link
+            extTarget = _blank
+        }
+    }
+    50 = TEXT
+    50 {
+        wrap = <li> | </li>
+        if.isTrue.data = levelfield:0, youtube_link
+        value = <i class="fab fa-youtube"></i>
+        stdWrap.typolink {
+            parameter.data = levelfield:0, youtube_link
+            extTarget = _blank
+        }
+    }
+}
+
+lib.copyright = TEXT
+lib.copyright {
+    data = date:U
+    strftime =%Y
+    noTrimWrap = |&copy; 2006 - | <a href="https://www.m-net.de/">M-net Telekommunikations GmbH</a>|
+}
+
+

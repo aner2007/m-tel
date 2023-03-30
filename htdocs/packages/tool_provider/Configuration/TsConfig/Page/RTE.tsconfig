@@ -1,0 +1,8 @@
+#############
+#### RTE ####
+#############
+RTE {
+    default {
+        preset = tool_provider
+    }
+}
