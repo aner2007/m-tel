@@ -1,0 +1,17 @@
+# datoteka: my_custom_extension/Configuration/TypoScript/setup.typoscript
+tt_content.my_custom_element =< lib.contentElement
+tt_content.my_custom_element {
+    templateName = MyCustomContentElement
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+            table = tx_my_custom_extension_domain_model_my_custom_content_element
+            pidInList = {$plugin.tx_my_custom_extension.settings.pid}
+            where {
+                data = field:uid
+            }
+            orderBy = sorting
+            as = myCustomElement
+        }
+    }
+}

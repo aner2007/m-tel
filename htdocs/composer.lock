@@ -1271,11 +1271,11 @@
             "time": "2022-05-23T07:44:28+00:00"
         },
         {
-            "name": "m-tel/tool-provider",
+            "name": "m-tel/bitconex-theme",
             "version": "1.0.0",
             "dist": {
                 "type": "path",
-                "url": "packages/tool_provider",
+                "url": "packages/bitconex_theme",
                 "reference": "98e7f1fc7c933d8e35405c83e973c6360822011f"
             },
             "require": {

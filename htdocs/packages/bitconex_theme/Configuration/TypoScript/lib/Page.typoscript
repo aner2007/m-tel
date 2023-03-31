@@ -1,0 +1,100 @@
+page = PAGE
+page {
+    typeNum = 0
+
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+            ifEmpty = Default
+        }
+        templateRootPaths {
+            0 = EXT:bitconex_theme/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:bitconex_theme/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:bitconex_theme/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                levels = 2
+                includeSpacer = 1
+                as = mainnavigation
+            }
+        }
+        variables {
+            content < lib.content
+            logo < lib.logo
+            cta < lib.cta
+            menuMain < lib.menu.main
+            logoutButton < lib.logoutButton
+            mainMenu < lib.mainMenu
+            breadcrumb < lib.breadcrumb
+            copyright < lib.copyright
+            menuFooter < lib.menu.footer
+            headerContact < lib.header.contact
+            footerSocial < lib.footer.social
+        }
+
+    }
+
+    bodyTag >
+
+    bodyTagCObject = COA
+    bodyTagCObject {
+        wrap = <body|>
+
+        10 = TEXT
+        10.value = {$lib.body.class}
+        10.noTrimWrap = | class="|"|
+        10.if.isTrue = {$lib.body.class}
+
+        20 = TEXT
+        20.value = {$lib.body.id}
+        20.noTrimWrap = | id="|"|
+        20.if.isTrue = {$lib.body.id}
+    }
+
+    includeCSSLibs {
+        bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css
+        bootstrap.external = 1
+        fontAwesome = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+        fontAwesome.external = 1
+    }
+
+    includeCSS {
+        custom = EXT:bitconex_theme/Resources/Public/css/custom.css
+    }
+
+    includeJSFooterlibs {
+        bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js
+        bootstrap.external = 1
+        fontAwesome = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js
+        fontAwesome.external = 1
+    }
+
+    includeJSFooter {
+        custom = EXT:bitconex_theme/Resources/Public/javascript/custom.js
+    }
+}

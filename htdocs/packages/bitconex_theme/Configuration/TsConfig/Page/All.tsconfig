@@ -1,0 +1,6 @@
+#
+# PageTS for bitconex_theme
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bitconex_theme/Configuration/TsConfig/Page/mod.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bitconex_theme/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bitconex_theme/Configuration/TsConfig/Page/WebLayout/BackendLayouts.tsconfig">

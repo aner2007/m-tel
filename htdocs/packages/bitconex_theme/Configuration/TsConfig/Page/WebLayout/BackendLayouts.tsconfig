@@ -1,0 +1,4 @@
+#
+# BACKENDLAYOUTS
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bitconex_theme/Configuration/TsConfig/Page/WebLayout/BackendLayouts" extensions="tsconfig">

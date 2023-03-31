@@ -1,0 +1,13 @@
+{
+    "name": "m-tel/bitconex-theme",
+    "type": "typo3-cms-extension",
+    "description": "Provider extension for M-Tel",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^10.0",
+        "typo3/cms-rte-ckeditor": "^10.0",
+        "typo3/cms-fluid-styled-content": "^10.0"
+    }
+}
