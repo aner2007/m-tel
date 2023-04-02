@@ -1,0 +1,371 @@
+# TypoScript for rendering in frontend
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.typoscript">
+
+tt_content.gridelements_pi1.20.10.setup {
+    # same identifier as in tsconfig
+    sectionElement < lib.gridelements.defaultGridSetup
+    sectionElement {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/Section.html
+            variables {
+                containerWidth = TEXT
+                containerWidth.data = field:flexform_containerWidth
+
+                sectionId = TEXT
+                sectionId.data = field:flexform_sectionId
+
+                sectionClass = TEXT
+                sectionClass.data = field:flexform_sectionClass
+
+                animationDirection = TEXT
+                animationDirection.data = field:flexform_animationDirection
+
+                containerId = TEXT
+                containerId.data = field:flexform_containerId
+
+                containerClass = TEXT
+                containerClass.data = field:flexform_containerClass
+            }
+        }
+        columns {
+            401 < .default
+        }
+    }
+    # same identifier as in tsconfig
+    1col < lib.gridelements.defaultGridSetup
+    1col {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/OneColumn.html
+            variables {
+                col1 = TEXT
+                col1.data = field:flexform_col1
+
+                smCol1 = TEXT
+                smCol1.data = field:flexform_smCol1
+
+                mdCol1 = TEXT
+                mdCol1.data = field:flexform_mdCol1
+
+                lgCol1 = TEXT
+                lgCol1.data = field:flexform_lgCol1
+
+                xlCol1 = TEXT
+                xlCol1.data = field:flexform_xlCol1
+            }
+        }
+        columns {
+            401 < .default
+        }
+    }
+    2col < lib.gridelements.defaultGridSetup
+    2col {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/TwoColumn.html
+            variables {
+                col1 = TEXT
+                col1.data = field:flexform_col1
+                col2 = TEXT
+                col2.data = field:flexform_col2
+
+                smCol1 = TEXT
+                smCol1.data = field:flexform_smCol1
+                smCol2 = TEXT
+                smCol2.data = field:flexform_smCol2
+
+                mdCol1 = TEXT
+                mdCol1.data = field:flexform_mdCol1
+                mdCol2 = TEXT
+                mdCol2.data = field:flexform_mdCol2
+
+                lgCol1 = TEXT
+                lgCol1.data = field:flexform_lgCol1
+                lgCol2 = TEXT
+                lgCol2.data = field:flexform_lgCol2
+
+                xlCol1 = TEXT
+                xlCol1.data = field:flexform_xlCol1
+                xlCol2 = TEXT
+                xlCol2.data = field:flexform_xlCol2
+            }
+        }
+        columns {
+            401 < .default
+            402 < .default
+        }
+    }
+    3col < lib.gridelements.defaultGridSetup
+    3col {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/ThreeColumn.html
+            variables {
+                col1 = TEXT
+                col1.data = field:flexform_col1
+                col2 = TEXT
+                col2.data = field:flexform_col2
+                col3 = TEXT
+                col3.data = field:flexform_col3
+
+                smCol1 = TEXT
+                smCol1.data = field:flexform_smCol1
+                smCol2 = TEXT
+                smCol2.data = field:flexform_smCol2
+                smCol3 = TEXT
+                smCol3.data = field:flexform_smCol3
+
+                mdCol1 = TEXT
+                mdCol1.data = field:flexform_mdCol1
+                mdCol2 = TEXT
+                mdCol2.data = field:flexform_mdCol2
+                mdCol3 = TEXT
+                mdCol3.data = field:flexform_mdCol3
+
+                lgCol1 = TEXT
+                lgCol1.data = field:flexform_lgCol1
+                lgCol2 = TEXT
+                lgCol2.data = field:flexform_lgCol2
+                lgCol3 = TEXT
+                lgCol3.data = field:flexform_lgCol3
+
+                xlCol1 = TEXT
+                xlCol1.data = field:flexform_xlCol1
+                xlCol2 = TEXT
+                xlCol2.data = field:flexform_xlCol2
+                xlCol3 = TEXT
+                xlCol3.data = field:flexform_xlCol3
+            }
+        }
+        columns {
+            401 < .default
+
+            402 < .default
+
+            403 < .default
+        }
+    }
+    4col < lib.gridelements.defaultGridSetup
+    4col {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/FourColumn.html
+            variables {
+                col1 = TEXT
+                col1.data = field:flexform_col1
+                col2 = TEXT
+                col2.data = field:flexform_col2
+                col3 = TEXT
+                col3.data = field:flexform_col3
+                col4 = TEXT
+                col4.data = field:flexform_col4
+
+                smCol1 = TEXT
+                smCol1.data = field:flexform_smCol1
+                smCol2 = TEXT
+                smCol2.data = field:flexform_smCol2
+                smCol3 = TEXT
+                smCol3.data = field:flexform_smCol3
+                smCol4 = TEXT
+                smCol4.data = field:flexform_smCol4
+
+                mdCol1 = TEXT
+                mdCol1.data = field:flexform_mdCol1
+                mdCol2 = TEXT
+                mdCol2.data = field:flexform_mdCol2
+                mdCol3 = TEXT
+                mdCol3.data = field:flexform_mdCol3
+                mdCol4 = TEXT
+                mdCol4.data = field:flexform_mdCol4
+
+                lgCol1 = TEXT
+                lgCol1.data = field:flexform_lgCol1
+                lgCol2 = TEXT
+                lgCol2.data = field:flexform_lgCol2
+                lgCol3 = TEXT
+                lgCol3.data = field:flexform_lgCol3
+                lgCol4 = TEXT
+                lgCol4.data = field:flexform_lgCol4
+
+                xlCol1 = TEXT
+                xlCol1.data = field:flexform_xlCol1
+                xlCol2 = TEXT
+                xlCol2.data = field:flexform_xlCol2
+                xlCol3 = TEXT
+                xlCol3.data = field:flexform_xlCol3
+                xlCol4 = TEXT
+                xlCol4.data = field:flexform_xlCol4
+            }
+        }
+        columns {
+            401 < .default
+
+            402 < .default
+
+            403 < .default
+
+            404 < .default
+        }
+    }
+    5col < lib.gridelements.defaultGridSetup
+    5col {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/FiveColumn.html
+            variables {
+                col1 = TEXT
+                col1.data = field:flexform_col1
+                col2 = TEXT
+                col2.data = field:flexform_col2
+                col3 = TEXT
+                col3.data = field:flexform_col3
+                col4 = TEXT
+                col4.data = field:flexform_col4
+                col5 = TEXT
+                col5.data = field:flexform_col5
+
+                smCol1 = TEXT
+                smCol1.data = field:flexform_smCol1
+                smCol2 = TEXT
+                smCol2.data = field:flexform_smCol2
+                smCol3 = TEXT
+                smCol3.data = field:flexform_smCol3
+                smCol4 = TEXT
+                smCol4.data = field:flexform_smCol4
+                smCol5 = TEXT
+                smCol5.data = field:flexform_smCol5
+
+                mdCol1 = TEXT
+                mdCol1.data = field:flexform_mdCol1
+                mdCol2 = TEXT
+                mdCol2.data = field:flexform_mdCol2
+                mdCol3 = TEXT
+                mdCol3.data = field:flexform_mdCol3
+                mdCol4 = TEXT
+                mdCol4.data = field:flexform_mdCol4
+                mdCol5 = TEXT
+                mdCol5.data = field:flexform_mdCol5
+
+                lgCol1 = TEXT
+                lgCol1.data = field:flexform_lgCol1
+                lgCol2 = TEXT
+                lgCol2.data = field:flexform_lgCol2
+                lgCol3 = TEXT
+                lgCol3.data = field:flexform_lgCol3
+                lgCol4 = TEXT
+                lgCol4.data = field:flexform_lgCol4
+                lgCol5 = TEXT
+                lgCol5.data = field:flexform_lgCol5
+
+                xlCol1 = TEXT
+                xlCol1.data = field:flexform_xlCol1
+                xlCol2 = TEXT
+                xlCol2.data = field:flexform_xlCol2
+                xlCol3 = TEXT
+                xlCol3.data = field:flexform_xlCol3
+                xlCol4 = TEXT
+                xlCol4.data = field:flexform_xlCol4
+                xlCol5 = TEXT
+                xlCol5.data = field:flexform_xlCol5
+            }
+        }
+        columns {
+            401 < .default
+
+            402 < .default
+
+            403 < .default
+
+            404 < .default
+
+            405 < .default
+        }
+    }
+    6col < lib.gridelements.defaultGridSetup
+    6col {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:bitconex_bootstrap_grid_provider/Resources/Private/Templates/GridElements/SixColumn.html
+            variables {
+                col1 = TEXT
+                col1.data = field:flexform_col1
+                col2 = TEXT
+                col2.data = field:flexform_col2
+                col3 = TEXT
+                col3.data = field:flexform_col3
+                col4 = TEXT
+                col4.data = field:flexform_col4
+                col5 = TEXT
+                col5.data = field:flexform_col5
+                col6 = TEXT
+                col6.data = field:flexform_col6
+
+                smCol1 = TEXT
+                smCol1.data = field:flexform_smCol1
+                smCol2 = TEXT
+                smCol2.data = field:flexform_smCol2
+                smCol3 = TEXT
+                smCol3.data = field:flexform_smCol3
+                smCol4 = TEXT
+                smCol4.data = field:flexform_smCol4
+                smCol5 = TEXT
+                smCol5.data = field:flexform_smCol5
+                smCol6 = TEXT
+                smCol6.data = field:flexform_smCol6
+
+                mdCol1 = TEXT
+                mdCol1.data = field:flexform_mdCol1
+                mdCol2 = TEXT
+                mdCol2.data = field:flexform_mdCol2
+                mdCol3 = TEXT
+                mdCol3.data = field:flexform_mdCol3
+                mdCol4 = TEXT
+                mdCol4.data = field:flexform_mdCol4
+                mdCol5 = TEXT
+                mdCol5.data = field:flexform_mdCol5
+                mdCol6 = TEXT
+                mdCol6.data = field:flexform_mdCol6
+
+                lgCol1 = TEXT
+                lgCol1.data = field:flexform_lgCol1
+                lgCol2 = TEXT
+                lgCol2.data = field:flexform_lgCol2
+                lgCol3 = TEXT
+                lgCol3.data = field:flexform_lgCol3
+                lgCol4 = TEXT
+                lgCol4.data = field:flexform_lgCol4
+                lgCol5 = TEXT
+                lgCol5.data = field:flexform_lgCol5
+                lgCol6 = TEXT
+                lgCol6.data = field:flexform_lgCol6
+
+                xlCol1 = TEXT
+                xlCol1.data = field:flexform_xlCol1
+                xlCol2 = TEXT
+                xlCol2.data = field:flexform_xlCol2
+                xlCol3 = TEXT
+                xlCol3.data = field:flexform_xlCol3
+                xlCol4 = TEXT
+                xlCol4.data = field:flexform_xlCol4
+                xlCol5 = TEXT
+                xlCol5.data = field:flexform_xlCol5
+                xlCol6 = TEXT
+                xlCol6.data = field:flexform_xlCol6
+            }
+        }
+        columns {
+            401 < .default
+
+            402 < .default
+
+            403 < .default
+
+            404 < .default
+
+            405 < .default
+
+            406 < .default
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<section class="{f:if(condition: sectionClass, then: '{sectionClass}')}{f:if(condition: animationDirection, then: ' {animationDirection}')}"{f:if(condition: sectionId, then: ' id="{sectionId}"')}>
+    <div {f:if(condition: containerId, then: ' id="{containerId}"')} class="{containerWidth}{f:if(condition: containerClass, then: ' {containerClass}')}">
+        {data.tx_gridelements_view_column_401 -> f:format.raw()}
+    </div>
+</section>

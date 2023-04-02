@@ -1,0 +1,4 @@
+#
+# PageTS for Grid Provider
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/TsConfig/Page/GridElements.tsconfig">

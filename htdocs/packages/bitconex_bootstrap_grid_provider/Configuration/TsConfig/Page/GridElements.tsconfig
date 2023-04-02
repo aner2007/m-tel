@@ -1,0 +1,194 @@
+# Page TSConfig:
+tx_gridelements.setup {
+	# Identifier
+
+	sectionElement {
+        title = Section
+        config {
+            colCount = 1
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = Content
+                        colPos = 401
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_section.xml
+	}
+
+	1col {
+        title = 1 Column
+        config {
+            colCount = 1
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = Left
+                        colPos = 401
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_1col.xml
+	}
+
+	2col {
+        title = 2 Columns
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = Left
+                        colPos = 401
+                    }
+                    2 {
+                        name = Right
+                        colPos = 402
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_2col.xml
+	}
+
+	3col {
+        title = 3 Columns
+        config {
+            colCount = 3
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = First Column
+                        colPos = 401
+                    }
+                    2 {
+                        name = Second Column
+                        colPos = 402
+                    }
+                    3 {
+                        name = Third Column
+                        colPos = 403
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_3col.xml
+	}
+	4col {
+        title = 4 Columns
+        config {
+            colCount = 4
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = First Column
+                        colPos = 401
+                    }
+                    2 {
+                        name = Second Column
+                        colPos = 402
+                    }
+                    3 {
+                        name = Third Column
+                        colPos = 403
+                    }
+                    4 {
+                        name = Fourth Column
+                        colPos = 404
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_4col.xml
+	}
+	5col {
+        title = 5 Columns
+        config {
+            colCount = 5
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = First Column
+                        colPos = 401
+                    }
+                    2 {
+                        name = Second Column
+                        colPos = 402
+                    }
+                    3 {
+                        name = Third Column
+                        colPos = 403
+                    }
+                    4 {
+                        name = Fourth Column
+                        colPos = 404
+                    }
+                    5 {
+                        name = Fifth Column
+                        colPos = 405
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_5col.xml
+	}
+	6col {
+        title = 6 Columns
+        config {
+            colCount = 6
+            rowCount = 1
+            rows {
+            1 {
+                columns {
+                    1 {
+                        name = First Column
+                        colPos = 401
+                    }
+                    2 {
+                        name = Second Column
+                        colPos = 402
+                    }
+                    3 {
+                        name = Third Column
+                        colPos = 403
+                    }
+                    4 {
+                        name = Fourth Column
+                        colPos = 404
+                    }
+                    5 {
+                        name = Fifth Column
+                        colPos = 405
+                    }
+                    6 {
+                        name = Sixth Column
+                        colPos = 406
+                    }
+                }
+            }
+            }
+        }
+        flexformDS = FILE:EXT:bitconex_bootstrap_grid_provider/Configuration/FlexForm/flexform_6col.xml
+	}
+}

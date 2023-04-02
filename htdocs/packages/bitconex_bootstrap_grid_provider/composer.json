@@ -1,0 +1,19 @@
+{
+    "name": "m-tel/bitconex-bootstrap-grid-elements",
+    "type": "typo3-cms-extension",
+    "description": "Provides GridElements configuration for Bootstrap",
+    "homepage": "http://local.m-tel/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^10.0",
+        "typo3/cms-rte-ckeditor": "^10.0",
+        "typo3/cms-fluid-styled-content": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MTel\\ToolBootstrapGridProvider\\": "Classes/"
+        }
+    }
+}
