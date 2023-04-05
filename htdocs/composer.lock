@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ada4ddbdcc123ee0f474903fff87cc33",
+    "content-hash": "2c0c7b3a6e4f68bb94ae3a798072ae0d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1271,12 +1271,12 @@
             "time": "2022-05-23T07:44:28+00:00"
         },
         {
-            "name": "m-tel/bitconex-theme",
+            "name": "m-tel/bitconex-bootstrap-grid-elements",
             "version": "1.0.0",
             "dist": {
                 "type": "path",
-                "url": "packages/bitconex_theme",
-                "reference": "98e7f1fc7c933d8e35405c83e973c6360822011f"
+                "url": "packages/bitconex_bootstrap_grid_provider",
+                "reference": "f0efe819d394a7a5700d167983fbcda2b9aca733"
             },
             "require": {
                 "typo3/cms-core": "^10.0",
@@ -1284,6 +1284,42 @@
                 "typo3/cms-rte-ckeditor": "^10.0"
             },
             "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "bitconex_bootstrap_grid_provider"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Provides GridElements configuration for Bootstrap",
+            "homepage": "http://local.m-tel/",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "m-tel/bitconex-theme",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/bitconex_theme",
+                "reference": "0e9bdf9840ca1c01544dbaaa55043eea5ee795cb"
+            },
+            "require": {
+                "typo3/cms-core": "^10.0",
+                "typo3/cms-fluid-styled-content": "^10.0",
+                "typo3/cms-rte-ckeditor": "^10.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "bitconex_theme"
+                }
+            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1294,6 +1330,104 @@
             "transport-options": {
                 "relative": true
             }
+        },
+        {
+            "name": "mask/mask",
+            "version": "v7.2.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gernott/mask.git",
+                "reference": "7ae17b6eb9a982ae13667a2152cbc25d7b3833c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gernott/mask/zipball/7ae17b6eb9a982ae13667a2152cbc25d7b3833c1",
+                "reference": "7ae17b6eb9a982ae13667a2152cbc25d7b3833c1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0",
+                "typo3/cms-backend": "^10.4.16 || ^11.5.0",
+                "typo3/cms-core": "^10.4.16 || ^11.5.0",
+                "typo3/cms-fluid": "^10.4.16 || ^11.5.0",
+                "typo3/cms-fluid-styled-content": "^10.4.16 || ^11.5.0"
+            },
+            "replace": {
+                "typo3-ter/mask": "self.version"
+            },
+            "require-dev": {
+                "bnf/phpstan-psr-container": "^1.0",
+                "friendsofphp/php-cs-fixer": "^3.4",
+                "friendsoftypo3/phpstan-typo3": "^0.9.0",
+                "jangregor/phpstan-prophecy": "^1.0",
+                "phpspec/prophecy": "^1.15",
+                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^8.4",
+                "typo3/coding-standards": "^0.5",
+                "typo3/tailor": "^1.2",
+                "typo3/testing-framework": "^6"
+            },
+            "suggest": {
+                "b13/container": "Allows creating container elements to place your Mask elements into.",
+                "gridelementsteam/gridelements": "Allows creating container elements to place your Mask elements into."
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mask",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MASK\\Mask\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WEBprofil - Gernot Ploiner e.U.",
+                    "email": "office@webprofil.at",
+                    "homepage": "https://www.webprofil.at",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nikita Hovratov",
+                    "email": "info@nikita-hovratov.de",
+                    "homepage": "https://www.nikita-hovratov.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create your own content elements and page templates. Easy to use, even without programming skills because of the comfortable drag and drop user interface. Stored in structured database tables. Style your frontend with Fluid tags. Ideal, if you want to switch from Templavoila.",
+            "homepage": "https://extensions.typo3.org/extension/mask",
+            "keywords": [
+                "TYPO3 CMS",
+                "contentelements",
+                "mask",
+                "wizard"
+            ],
+            "support": {
+                "chat": "https://typo3.slack.com/archives/C0FD5F6P2",
+                "docs": "https://docs.typo3.org/p/mask/mask/main/en-us/",
+                "issues": "https://github.com/gernott/mask/issues/",
+                "source": "https://github.com/gernott/mask"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nhovratov",
+                    "type": "Nikita Hovratov (Developer)"
+                },
+                {
+                    "url": "https://github.com/sponsors/Gernott",
+                    "type": "WEBprofil - Gernot Ploiner e.U. (Founder)"
+                }
+            ],
+            "time": "2023-02-27T17:48:42+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -1836,25 +1970,25 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1883,9 +2017,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/http-server-handler",

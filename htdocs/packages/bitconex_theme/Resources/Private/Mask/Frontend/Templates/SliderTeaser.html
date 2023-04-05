@@ -1,0 +1,38 @@
+<div class="slider-left">
+    <div class="content">
+      <svg version="1.1" class="mn-hero__wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 541 420" style="enable-background:new 0 0 541 420;" xml:space="preserve">
+        <path id="PFAD" class="st0" d="M384,0c0,0-20.5,0.1-47.7,0.1C281.8,0.1,0,0,0,0v420c0,0,351.5,0,452.5,0c50.5,0,88.4,0,88.5,0C436.7,255.5,389.6,121.7,383,50.2C381.4,32.8,381.5,16,384,0"></path>
+      </svg>
+      <h1>
+        <f:if condition="{data.header}">
+            {data.header}
+        </f:if>
+      </h1>
+      <div class="slider-btn">
+        <p class="orange-title">
+            <f:if condition="{data.tx_mask_label}">
+                {data.tx_mask_label}
+            </f:if>
+        </p>
+
+      
+            
+            <span class="old-price">statt <br>  <f:if condition="{data.tx_mask_price}">
+                {data.tx_mask_price}
+            </f:if>€ </span>
+            <span class="price"><f:if condition="{data.tx_mask_price_int}">
+                {data.tx_mask_price_int}
+            </f:if></span>
+            <div class="price-div">
+              <span class="price-decimal"><f:if condition="{data.tx_mask_price_decimal}">
+                {data.tx_mask_price_decimal}
+            </f:if></span>
+              <span class="price-text">€ mtl. <span class="price-zarez">,</span>
+            </span></div>
+         
+
+
+        
+      </div>
+    </div>
+  </div>

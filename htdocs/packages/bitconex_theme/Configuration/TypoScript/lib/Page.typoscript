@@ -1,5 +1,6 @@
 page = PAGE
 page {
+    5 >
     typeNum = 0
 
     10 = FLUIDTEMPLATE

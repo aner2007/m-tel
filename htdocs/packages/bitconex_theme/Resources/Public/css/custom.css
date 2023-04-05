@@ -252,7 +252,11 @@ section.light {
   margin-left: -24px;
   margin-right: 10px;
 }
-
+.section5 svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  margin-right: 5px;
+  margin-left: -27px;
+}
 H2, H3, H4, H5 {
   font-weight: 600;
 }
@@ -273,5 +277,16 @@ footer .list-inline li {
 footer .list-inline li a {
   color: #464646;
 }
+.footer-menur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menur li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 
 /*# sourceMappingURL=custom.css.map */

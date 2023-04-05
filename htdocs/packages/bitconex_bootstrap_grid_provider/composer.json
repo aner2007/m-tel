@@ -11,9 +11,9 @@
         "typo3/cms-rte-ckeditor": "^10.0",
         "typo3/cms-fluid-styled-content": "^10.0"
     },
-    "autoload": {
-        "psr-4": {
-            "MTel\\ToolBootstrapGridProvider\\": "Classes/"
+    "extra": {
+        "typo3/cms": {
+           "extension-key": "bitconex_bootstrap_grid_provider"
         }
-    }
+     }
 }

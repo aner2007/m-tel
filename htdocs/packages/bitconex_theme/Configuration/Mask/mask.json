@@ -1,0 +1,164 @@
+{
+    "version": "7.2.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "intro_text": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "bodytext",
+                        "subheader",
+                        "tx_mask_list"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "intro_text",
+                    "label": "Intro Text",
+                    "labels": [
+                        "Header",
+                        "Intro teaser",
+                        "Sub header",
+                        "List"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                },
+                "slider_teaser": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_label",
+                        "tx_mask_price",
+                        "tx_mask_price_int",
+                        "tx_mask_price_decimal"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "slider_teaser",
+                    "label": "Slider Teaser",
+                    "labels": [
+                        "",
+                        "Label",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            },
+            "sql": {
+                "tx_mask_label": {
+                    "tt_content": {
+                        "tx_mask_label": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_list": {
+                    "tt_content": {
+                        "tx_mask_list": "mediumtext"
+                    }
+                },
+                "tx_mask_price": {
+                    "tt_content": {
+                        "tx_mask_price": "float DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_price_decimal": {
+                    "tt_content": {
+                        "tx_mask_price_decimal": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_price_int": {
+                    "tt_content": {
+                        "tx_mask_price_int": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "bodytext": {
+                    "bodytextTypeByElement": {
+                        "intro_text": "text",
+                        "slider_teaser": "text"
+                    },
+                    "coreField": 1,
+                    "fullKey": "bodytext",
+                    "key": "bodytext"
+                },
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "subheader": {
+                    "coreField": 1,
+                    "fullKey": "subheader",
+                    "key": "subheader",
+                    "type": "string"
+                },
+                "tx_mask_label": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_label",
+                    "key": "label",
+                    "type": "string"
+                },
+                "tx_mask_list": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_list",
+                    "key": "list",
+                    "type": "richtext"
+                },
+                "tx_mask_price": {
+                    "config": {
+                        "eval": "double2",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_price",
+                    "key": "price",
+                    "type": "float"
+                },
+                "tx_mask_price_decimal": {
+                    "config": {
+                        "eval": "int",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_price_decimal",
+                    "key": "price_decimal",
+                    "type": "integer"
+                },
+                "tx_mask_price_int": {
+                    "config": {
+                        "eval": "int",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_price_int",
+                    "key": "price_int",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

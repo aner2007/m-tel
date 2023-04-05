@@ -24,7 +24,21 @@ lib.logo {
 lib.cta = TEXT
 lib.cta {
     wrap = <button class="btn click-me"> | </button>
-    value = Click me
+    value = Click mee
+}
+
+lib.phone = TEXT
+lib.phone {
+    wrap = <p> | </p>
+    if.isTrue.data = levelfield:0, phone
+    data = levelfield:0, phone
+}
+
+lib.email = TEXT
+lib.email {
+    wrap = <p> | </p>
+    if.isTrue.data = levelfield:0, email
+    data = levelfield:0, email
 }
 
 lib.footer.social = COA
@@ -87,7 +101,7 @@ lib.copyright = TEXT
 lib.copyright {
     data = date:U
     strftime =%Y
-    noTrimWrap = |&copy; 2006 - | <a href="https://www.m-net.de/">M-net Telekommunikations GmbH</a>|
+    noTrimWrap = |&copy; 2006 - | <a href="https://www.m-net.de/">M-net 112 Telekommunikations GmbH</a>|
 }
 
 

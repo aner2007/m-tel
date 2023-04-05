@@ -4,8 +4,8 @@
  * Extension Manager/Repository config file for ext "bitconex_theme".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'bitconex_theme',
-    'description' => 'bitconex_theme extension for M-Tel',
+    'title' => 'Bitconex Theme',
+    'description' => 'Bitconex Theme extension for M-Tel',
     'category' => 'templates',
     'constraints' => [
         'depends' => [

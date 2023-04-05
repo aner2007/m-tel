@@ -1,7 +1,6 @@
 # Page TSConfig:
 tx_gridelements.setup {
 	# Identifier
-
 	sectionElement {
         title = Section
         config {

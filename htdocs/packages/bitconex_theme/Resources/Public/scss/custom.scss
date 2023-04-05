@@ -268,6 +268,13 @@ section {
         margin-left: -24px;
         margin-right: 10px;
     }
+    svg:not(:root){
+        .svg-inline--fa {
+            overflow: visible;
+            margin-right: 5px;
+            margin-left: -27px;
+        }
+    }
 }
 H2,H3,H4,H5{
    font-weight: 600;
@@ -289,5 +296,15 @@ footer{
         color:#464646;
     }
     
-    
+    .footer-menur {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        li {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+      
 }

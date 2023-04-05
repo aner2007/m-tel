@@ -4,7 +4,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            default {
+            main {
                 title = LLL:EXT:bitconex_theme/Resources/Private/Language/locallang_be.xlf:backend_layout.default
                 config {
                     backend_layout {
