@@ -1,0 +1,36 @@
+<div class="col-md-12 left-section">
+    <f:for each="{data.tx_mask_image_img}" as="file">
+      <f:image image="{file}" width="200" /> {file.description}
+    </f:for>
+    <div class="custom-position">
+      <f:variable name="position" value="{data.tx_mask_position}" />
+      <div class="slider-btn position{data.tx_mask_position}">
+        <p class="orange-title">
+          <f:if condition="{data.tx_mask_left_img_title}"> {data.tx_mask_left_img_title} </f:if>
+        </p>
+        <span class="price">
+          <f:if condition="{data.tx_mask_left_img_price}"> {data.tx_mask_left_img_price} </f:if>
+        </span>
+        <div class="price-div">
+          <p class="price-decimal">
+            <f:if condition="{data.tx_mask_left_img_decimal}"> {data.tx_mask_left_img_decimal} </f:if>
+          </p>
+          <p class="price-text">€ mtl. </p>
+          <p class="price-comma">,</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5>
+        <f:if condition="{data.tx_mask_images_title}"> {data.tx_mask_images_title} </f:if>
+      </h5>
+      <p>
+        <f:if condition="{data.tx_mask_images_text}"> {data.tx_mask_images_text} </f:if>
+      </p>
+      <div class="more-information">
+        <button type="button" class="btn btn-primary">
+          <f:if condition="{data.tx_mask_images_text}"> {data.tx_mask_image_link} </f:if>
+        </button>
+      </div>
+    </div>
+  </div>

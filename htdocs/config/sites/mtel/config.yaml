@@ -1,7 +1,7 @@
-base: 'http://local.m-tel:8080/'
+base: 'http://localhost/'
 languages:
   -
-    title: English
+    title: German
     enabled: true
     languageId: 0
     base: /

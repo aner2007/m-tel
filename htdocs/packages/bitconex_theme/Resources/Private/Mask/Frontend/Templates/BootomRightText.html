@@ -1,0 +1,22 @@
+<div class="col-md-12 right-section">
+    <h3>
+      <f:if condition="{data.tx_mask_right_title}"> {data.tx_mask_right_title} </f:if>
+    </h3>
+    <p>
+      <i class="fas fa-certificate"></i>
+      <f:if condition="{data.tx_mask_row1}"> {data.tx_mask_row1} </f:if>
+    </p>
+    <p>
+      <i class="fas fa-certificate"></i>
+      <f:if condition="{data.tx_mask_row2}"> {data.tx_mask_row2} </f:if>
+    </p>
+    <p>
+      <i class="fas fa-certificate"></i>
+      <f:if condition="{data.tx_mask_row3}"> {data.tx_mask_row3} </f:if>
+    </p>
+    <button class="btn btn-primary">
+      <f:if condition="{data.tx_mask_right_link}">
+        <f:link.typolink parameter="{data.tx_mask_right_link}">{data.tx_mask_right_link}</f:link.typolink>
+      </f:if>
+    </button>
+  </div>

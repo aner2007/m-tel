@@ -1,0 +1,27 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        customForm:
+          title: Custom Form
+          description: This is a custom form.
+          finishersDefinition:
+            customFinisher:
+              options:
+                recipientAddress: test@example.com
+                senderAddress: test@example.com
+                subject: Custom form submission
+                body: 'Form submitted at {date} by {customForm.data.name}.'
+          formElementsDefinition:
+            name:
+              type: Text
+              properties:
+                label: Name
+              validators:
+                required: true
+            email:
+              type: Email
+              properties:
+                label: Email
+              validators:
+                required: true

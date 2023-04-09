@@ -4,8 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c0c7b3a6e4f68bb94ae3a798072ae0d",
+    "content-hash": "bb4a7012947286480e164da5b52919d0",
     "packages": [
+        {
+            "name": "css-crush/css-crush",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peteboere/css-crush.git",
+                "reference": "b37cd5f5a462baebac08bb033482dcc3876ef73c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peteboere/css-crush/zipball/b37cd5f5a462baebac08bb033482dcc3876ef73c",
+                "reference": "b37cd5f5a462baebac08bb033482dcc3876ef73c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.*",
+                "psr/log": "1.0.*@dev",
+                "twig/twig": "1.*"
+            },
+            "bin": [
+                "bin/csscrush"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/functions.php"
+                ],
+                "psr-0": {
+                    "CssCrush": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pete Boere",
+                    "email": "pete@the-echoplex.net"
+                },
+                {
+                    "name": "GitHub contributors",
+                    "homepage": "https://github.com/peteboere/css-crush/contributors"
+                }
+            ],
+            "description": "CSS preprocessor",
+            "homepage": "http://the-echoplex.net/csscrush",
+            "keywords": [
+                "css",
+                "preprocessor"
+            ],
+            "support": {
+                "issues": "https://github.com/peteboere/css-crush/issues",
+                "source": "https://github.com/peteboere/css-crush/tree/v3.0.1"
+            },
+            "time": "2020-01-16T12:05:00+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "1.14.3",
@@ -679,6 +739,95 @@
             "time": "2022-02-21T09:13:59+00:00"
         },
         {
+            "name": "georgringer/news",
+            "version": "10.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "5325ea6a7bf490a9deabdf1f86372ad128a5e205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/5325ea6a7bf490a9deabdf1f86372ad128a5e205",
+                "reference": "5325ea6a7bf490a9deabdf1f86372ad128a5e205",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^10.4 || ^11"
+            },
+            "conflict": {
+                "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "typo3/cms-install": "^10.4 || ^11"
+            },
+            "suggest": {
+                "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
+                "georgringer/numbered-pagination": "Improved pagination API",
+                "reelworx/rx-shariff": "GDPR compliant social sharing"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+            "homepage": "https://extensions.typo3.org/extension/news",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/",
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-11-21T12:32:44+00:00"
+        },
+        {
             "name": "gridelementsteam/gridelements",
             "version": "10.4.3",
             "source": {
@@ -1204,6 +1353,90 @@
                 }
             ],
             "time": "2023-01-08T21:22:53+00:00"
+        },
+        {
+            "name": "in2code/powermail",
+            "version": "8.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/einpraegsam/powermail.git",
+                "reference": "c376df2ff00b62f978105b7380a3209aa36fe9fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/einpraegsam/powermail/zipball/c376df2ff00b62f978105b7380a3209aa36fe9fe",
+                "reference": "c376df2ff00b62f978105b7380a3209aa36fe9fe",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-json": "*",
+                "typo3/cms-core": "^10.4"
+            },
+            "replace": {
+                "typo3-ter/powermail": "self.version"
+            },
+            "require-dev": {
+                "behat/behat": "^3.5",
+                "behat/mink-extension": "^2.3",
+                "behat/mink-goutte-driver": "^1.2",
+                "behat/mink-selenium2-driver": "^1.3",
+                "friendsofphp/php-cs-fixer": "^2.19",
+                "helmich/typo3-typoscript-lint": "^2.5",
+                "mikey179/vfsstream": "^1.6",
+                "nimut/testing-framework": "^5.0",
+                "phpmd/phpmd": "^2.8",
+                "phpunit/phpunit": "^6.0",
+                "se/selenium-server-standalone": "^3",
+                "squizlabs/php_codesniffer": "^3.5",
+                "typo3/cms-core": "^10.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "powermail"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "In2code\\Powermail\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Kellner",
+                    "email": "alexander.kellner@in2code.de",
+                    "homepage": "https://www.in2code.de",
+                    "role": "Product and technical owner"
+                },
+                {
+                    "name": "Marcus Schwemer",
+                    "email": "marcus.schwemer@in2code.de",
+                    "homepage": "https://www.in2code.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Powermail is a well-known, editor-friendly, powerful and easy to use mailform extension with a lots of features",
+            "homepage": "https://github.com/einpraegsam/powermail",
+            "keywords": [
+                "form",
+                "mailform",
+                "spamprevention",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/einpraegsam/powermail/issues",
+                "source": "https://github.com/einpraegsam/powermail/tree/8.4.2"
+            },
+            "time": "2022-08-23T08:32:22+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -2228,6 +2461,86 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "scssphp/scssphp",
+            "version": "v1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scssphp/scssphp.git",
+                "reference": "33749d12c2569bb24071f94e9af828662dabb068"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/33749d12c2569bb24071f94e9af828662dabb068",
+                "reference": "33749d12c2569bb24071f94e9af828662dabb068",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.3 || ^9.4",
+                "sass/sass-spec": "*",
+                "squizlabs/php_codesniffer": "~3.5",
+                "symfony/phpunit-bridge": "^5.1",
+                "thoughtbot/bourbon": "^7.0",
+                "twbs/bootstrap": "~5.0",
+                "twbs/bootstrap4": "4.6.1",
+                "zurb/foundation": "~6.5"
+            },
+            "suggest": {
+                "ext-iconv": "Can be used as fallback when ext-mbstring is not available",
+                "ext-mbstring": "For best performance, mbstring should be installed as it is faster than ext-iconv"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "forward-command": false,
+                    "bin-links": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ScssPhp\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthon Pang",
+                    "email": "apang@softwaredevelopment.ca",
+                    "homepage": "https://github.com/robocoder"
+                },
+                {
+                    "name": "Cédric Morin",
+                    "email": "cedric@yterium.com",
+                    "homepage": "https://github.com/Cerdic"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://scssphp.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/scssphp/scssphp/issues",
+                "source": "https://github.com/scssphp/scssphp/tree/v1.11.0"
+            },
+            "time": "2022-09-02T21:24:55+00:00"
         },
         {
             "name": "symfony/cache",
@@ -6586,6 +6899,65 @@
                 "source": "https://github.com/TYPO3/Fluid"
             },
             "time": "2023-03-23T12:04:09+00:00"
+        },
+        {
+            "name": "wapplersystems/ws-scss",
+            "version": "1.1.26",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WapplerSystems/ws_scss.git",
+                "reference": "973f721b000883a1bf3e1a3592acc6b35ccf6341"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WapplerSystems/ws_scss/zipball/973f721b000883a1bf3e1a3592acc6b35ccf6341",
+                "reference": "973f721b000883a1bf3e1a3592acc6b35ccf6341",
+                "shasum": ""
+            },
+            "require": {
+                "css-crush/css-crush": "^3",
+                "php": "^7.2",
+                "scssphp/scssphp": "^1",
+                "typo3/cms-core": "^9.5 || ^10.4 || ^11"
+            },
+            "replace": {
+                "typo3-ter/ws-scss": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ws_scss"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WapplerSystems\\WsScss\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sven Wappler",
+                    "homepage": "https://wappler.systems",
+                    "role": "Developer"
+                }
+            ],
+            "description": "SASS compiler for TYPO3",
+            "homepage": "http://wappler.systems",
+            "keywords": [
+                "extension",
+                "sass",
+                "scss",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/WapplerSystems/ws_scss/issues",
+                "source": "https://github.com/WapplerSystems/ws_scss/tree/1.1.26"
+            },
+            "time": "2021-09-05T22:19:35+00:00"
         },
         {
             "name": "webmozart/assert",

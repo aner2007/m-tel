@@ -3,6 +3,134 @@
     "tables": {
         "tt_content": {
             "elements": {
+                "bootom_left_text": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_left_ttile",
+                        "tx_mask_left_discoun",
+                        "tx_mask_left_price",
+                        "tx_mask_left_decimal",
+                        "tx_mask_position"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "bootom_left_text",
+                    "label": "Bootom Left Text",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 3
+                },
+                "bootom_right_text": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_right_title",
+                        "tx_mask_row1",
+                        "tx_mask_row2",
+                        "tx_mask_row3",
+                        "tx_mask_right_link"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "bootom_right_text",
+                    "label": "Bootom Right Text",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 2
+                },
+                "icon_block": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_icon_title",
+                        "tx_mask_icon_text",
+                        "tx_mask_icon_link"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "icon_block",
+                    "label": "Icon Block",
+                    "labels": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "images_two": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_image_img",
+                        "tx_mask_left_img_title",
+                        "tx_mask_left_img_price",
+                        "tx_mask_left_img_decimal",
+                        "tx_mask_images_title",
+                        "tx_mask_images_text",
+                        "tx_mask_image_link"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "images_two",
+                    "label": "Images Two",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
                 "intro_text": {
                     "color": "#000000",
                     "colorOverlay": "#000000",
@@ -66,14 +194,89 @@
                 }
             },
             "sql": {
+                "tx_mask_icon_link": {
+                    "tt_content": {
+                        "tx_mask_icon_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_icon_text": {
+                    "tt_content": {
+                        "tx_mask_icon_text": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_icon_title": {
+                    "tt_content": {
+                        "tx_mask_icon_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_image_img": {
+                    "tt_content": {
+                        "tx_mask_image_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image_link": {
+                    "tt_content": {
+                        "tx_mask_image_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_images_text": {
+                    "tt_content": {
+                        "tx_mask_images_text": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_images_title": {
+                    "tt_content": {
+                        "tx_mask_images_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
                 "tx_mask_label": {
                     "tt_content": {
                         "tx_mask_label": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
+                "tx_mask_left_decimal": {
+                    "tt_content": {
+                        "tx_mask_left_decimal": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_discoun": {
+                    "tt_content": {
+                        "tx_mask_left_discoun": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_img_decimal": {
+                    "tt_content": {
+                        "tx_mask_left_img_decimal": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_img_price": {
+                    "tt_content": {
+                        "tx_mask_left_img_price": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_img_title": {
+                    "tt_content": {
+                        "tx_mask_left_img_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_price": {
+                    "tt_content": {
+                        "tx_mask_left_price": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_ttile": {
+                    "tt_content": {
+                        "tx_mask_left_ttile": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
                 "tx_mask_list": {
                     "tt_content": {
                         "tx_mask_list": "mediumtext"
+                    }
+                },
+                "tx_mask_position": {
+                    "tt_content": {
+                        "tx_mask_position": "int(11) DEFAULT '0' NOT NULL"
                     }
                 },
                 "tx_mask_price": {
@@ -89,6 +292,31 @@
                 "tx_mask_price_int": {
                     "tt_content": {
                         "tx_mask_price_int": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_right_link": {
+                    "tt_content": {
+                        "tx_mask_right_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_right_title": {
+                    "tt_content": {
+                        "tx_mask_right_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_row1": {
+                    "tt_content": {
+                        "tx_mask_row1": "mediumtext"
+                    }
+                },
+                "tx_mask_row2": {
+                    "tt_content": {
+                        "tx_mask_row2": "mediumtext"
+                    }
+                },
+                "tx_mask_row3": {
+                    "tt_content": {
+                        "tx_mask_row3": "mediumtext"
                     }
                 }
             },
@@ -114,12 +342,141 @@
                     "key": "subheader",
                     "type": "string"
                 },
+                "tx_mask_icon_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_icon_link",
+                    "key": "icon_link",
+                    "type": "link"
+                },
+                "tx_mask_icon_text": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_icon_text",
+                    "key": "icon_text",
+                    "type": "string"
+                },
+                "tx_mask_icon_title": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_icon_title",
+                    "key": "icon_title",
+                    "type": "string"
+                },
+                "tx_mask_image_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image_img",
+                    "imageoverlayPalette": 1,
+                    "key": "image_img",
+                    "type": "file"
+                },
+                "tx_mask_image_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_image_link",
+                    "key": "image_link",
+                    "type": "link"
+                },
+                "tx_mask_images_text": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_images_text",
+                    "key": "images_text",
+                    "type": "string"
+                },
+                "tx_mask_images_title": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_images_title",
+                    "key": "images_title",
+                    "type": "string"
+                },
                 "tx_mask_label": {
                     "config": {
                         "type": "input"
                     },
                     "fullKey": "tx_mask_label",
                     "key": "label",
+                    "type": "string"
+                },
+                "tx_mask_left_decimal": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_decimal",
+                    "key": "left_decimal",
+                    "type": "string"
+                },
+                "tx_mask_left_discoun": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_discoun",
+                    "key": "left_discoun",
+                    "type": "string"
+                },
+                "tx_mask_left_img_decimal": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_img_decimal",
+                    "key": "left_img_decimal",
+                    "type": "string"
+                },
+                "tx_mask_left_img_price": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_img_price",
+                    "key": "left_img_price",
+                    "type": "string"
+                },
+                "tx_mask_left_img_title": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_img_title",
+                    "key": "left_img_title",
+                    "type": "string"
+                },
+                "tx_mask_left_price": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_price",
+                    "key": "left_price",
+                    "type": "string"
+                },
+                "tx_mask_left_ttile": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_left_ttile",
+                    "key": "left_ttile",
                     "type": "string"
                 },
                 "tx_mask_list": {
@@ -130,6 +487,32 @@
                     "fullKey": "tx_mask_list",
                     "key": "list",
                     "type": "richtext"
+                },
+                "tx_mask_position": {
+                    "config": {
+                        "items": [
+                            [
+                                "top-left",
+                                "1"
+                            ],
+                            [
+                                "top-right",
+                                "2"
+                            ],
+                            [
+                                "bootom-left",
+                                "3"
+                            ],
+                            [
+                                "bootom-right",
+                                "4"
+                            ]
+                        ],
+                        "type": "radio"
+                    },
+                    "fullKey": "tx_mask_position",
+                    "key": "position",
+                    "type": "radio"
                 },
                 "tx_mask_price": {
                     "config": {
@@ -157,6 +540,50 @@
                     "fullKey": "tx_mask_price_int",
                     "key": "price_int",
                     "type": "integer"
+                },
+                "tx_mask_right_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_right_link",
+                    "key": "right_link",
+                    "type": "link"
+                },
+                "tx_mask_right_title": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_right_title",
+                    "key": "right_title",
+                    "type": "string"
+                },
+                "tx_mask_row1": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_row1",
+                    "key": "row1",
+                    "type": "text"
+                },
+                "tx_mask_row2": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_row2",
+                    "key": "row2",
+                    "type": "text"
+                },
+                "tx_mask_row3": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_row3",
+                    "key": "row3",
+                    "type": "text"
                 }
             }
         }

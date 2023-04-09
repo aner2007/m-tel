@@ -84,10 +84,10 @@ page {
         fontAwesome.external = 1
     }
 
+      
     includeCSS {
-        custom = EXT:bitconex_theme/Resources/Public/css/custom.css
+        custom = EXT:bitconex_theme/Resources/Public/scss/custom.scss
     }
-
     includeJSFooterlibs {
         bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js
         bootstrap.external = 1

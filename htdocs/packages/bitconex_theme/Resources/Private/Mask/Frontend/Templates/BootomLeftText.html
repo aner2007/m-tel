@@ -1,0 +1,27 @@
+<div class="col-md-12 left-section" style="background-image: url('fileadmin/user_upload/images3.jpg');">
+    <div class="custom-position">
+      <f:variable name="position" value="{data.tx_mask_position}" />
+      <div class="slider-btn position{data.tx_mask_position}">
+        <p class="orange-title">
+          <f:if condition="{data.tx_mask_left_ttile}"> {data.tx_mask_left_ttile} </f:if>
+        </p>
+        <div class="price-before-discount">
+          <p class="old-price-text">
+            <f:if condition="{data.tx_mask_left_discoun}"> {data.tx_mask_left_discoun} </f:if>
+          </p>
+          <p class="old-price-text">Mbits</p>
+          <span class="old-price-number">flir</span>
+        </div>
+        <span class="price">
+          <f:if condition="{data.tx_mask_left_price}"> {data.tx_mask_left_price} </f:if>
+        </span>
+        <div class="price-div">
+          <p class="price-decimal">
+            <f:if condition="{data.tx_mask_left_decimal}"> {data.tx_mask_left_decimal} </f:if>
+          </p>
+          <p class="price-text">€ mtl. </p>
+          <p class="price-comma">,</p>
+        </div>
+      </div>
+    </div>
+  </div>

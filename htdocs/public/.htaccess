@@ -40,10 +40,7 @@
 #	AddType "text/css" .gzip
 #</FilesMatch>
 #AddEncoding gzip .gzip
-<Directory /var/www/html/zadatak/m-tel/htdocs/public>
-   # When this directive is set to All, then any directive which has the .htaccess Context is allowed in .htaccess files.
-   AllowOverride All
-</Directory>
+
 <IfModule mod_deflate.c>
 	# Force compression for mangled `Accept-Encoding` request headers
 	<IfModule mod_setenvif.c>

@@ -1,21 +1,12 @@
-
 <h2>
-    <f:if condition="{data.header}">
-        {data.header}
-    </f:if>
-</h2>
-<p>
-    <f:if condition="{data.bodytext}">
-        {data.bodytext -> f:format.nl2br()}
-    </f:if>
-</p>
-<h4>
-    <f:if condition="{data.subheader}">
-        {data.subheader}
-    </f:if>
-</h4>
-<div class="custom-icon">
-    <f:if condition="{data.tx_mask_list}">
-        {data.tx_mask_list -> f:format.html()}
-    </f:if>
-</div>
+    <f:if condition="{data.header}"> {data.header} </f:if>
+  </h2>
+  <p>
+    <f:if condition="{data.bodytext}"> {data.bodytext -> f:format.nl2br()} </f:if>
+  </p>
+  <h4>
+    <f:if condition="{data.subheader}"> {data.subheader} </f:if>
+  </h4>
+  <div class="custom-icon">
+    <f:if condition="{data.tx_mask_list}"> {data.tx_mask_list -> f:format.html()} </f:if>
+  </div>
