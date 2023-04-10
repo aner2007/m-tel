@@ -71,12 +71,14 @@
                     "color": "#000000",
                     "colorOverlay": "#000000",
                     "columns": [
+                        "tx_mask_icon",
                         "tx_mask_icon_title",
                         "tx_mask_icon_text",
                         "tx_mask_icon_link"
                     ],
                     "description": "",
                     "descriptions": [
+                        "",
                         "",
                         "",
                         ""
@@ -86,6 +88,7 @@
                     "key": "icon_block",
                     "label": "Icon Block",
                     "labels": [
+                        "",
                         "",
                         "",
                         ""
@@ -194,6 +197,11 @@
                 }
             },
             "sql": {
+                "tx_mask_icon": {
+                    "tt_content": {
+                        "tx_mask_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
                 "tx_mask_icon_link": {
                     "tt_content": {
                         "tx_mask_icon_link": "varchar(255) DEFAULT '' NOT NULL"
@@ -341,6 +349,29 @@
                     "fullKey": "subheader",
                     "key": "subheader",
                     "type": "string"
+                },
+                "tx_mask_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_icon",
+                    "imageoverlayPalette": 1,
+                    "key": "icon",
+                    "type": "file"
                 },
                 "tx_mask_icon_link": {
                     "config": {

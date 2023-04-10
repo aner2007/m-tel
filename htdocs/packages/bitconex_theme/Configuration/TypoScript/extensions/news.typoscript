@@ -1,0 +1,19 @@
+plugin.tx_news {
+   view {
+      templateRootPaths >
+      templateRootPaths {
+         0 = EXT:news/Resources/Private/Templates/
+         10 = EXT:bitconex_theme/Resources/Private/Templates/Extensions/News/
+      }
+      partialRootPaths >
+      partialRootPaths {
+         0 = EXT:news/Resources/Private/Partials/
+         10 = EXT:bitconex_theme/Resources/Private/Partials/Extensions/News/
+      }
+      layoutRootPaths >
+      layoutRootPaths {
+         0 = EXT:news/Resources/Private/Layouts/
+         10 = EXT:bitconex_theme/Resources/Private/Layouts/Extensions/News/
+      }
+   }
+}

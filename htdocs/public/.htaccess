@@ -270,7 +270,7 @@ AddDefaultCharset utf-8
 
 	# Enable URL rewriting
 	RewriteEngine On
-
+    RewriteRule ^test$ /index.php [L]
 	# Store the current location in an environment variable CWD to use
 	# mod_rewrite in .htaccess files without knowing the RewriteBase
 	RewriteCond $0#%{REQUEST_URI} ([^#]*)#(.*)\1$
@@ -315,6 +315,7 @@ AddDefaultCharset utf-8
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-l
 	RewriteRule ^.*$ %{ENV:CWD}index.php [QSA,L]
+	  RewriteRule ^test$ /index.php [L]
 
 </IfModule>
 
