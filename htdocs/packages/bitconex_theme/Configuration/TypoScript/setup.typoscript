@@ -5,8 +5,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/Configuration/TypoScript/Main/setup.typoscript">
 
 
-
-
 <INCLUDE_TYPOSCRIPT: source="DIR:./extensions" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./lib/PageContentColumns.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./lib/Menu.typoscript">

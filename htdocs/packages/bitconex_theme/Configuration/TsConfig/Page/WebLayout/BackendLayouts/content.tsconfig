@@ -4,7 +4,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            main {
+            content {
                 title = LLL:EXT:bitconex_theme/Resources/Private/Language/locallang_be.xlf:backend_layout.default
                 config {
                     backend_layout {
@@ -14,7 +14,7 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:bitconex_theme/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
+                                        name = LLL:EXT:bitconex_theme/Resources/Private/Language/locallang_be.xlf:backend_layout.content
                                         colPos = 0
                                     }
                                 }
@@ -27,3 +27,4 @@ mod {
         }
     }
 }
+
